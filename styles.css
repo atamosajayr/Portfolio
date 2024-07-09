@@ -1,0 +1,133 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #333; /* Dark background similar to header */
+    color: #fff; /* Light text color for contrast */
+    padding: 10px 0; /* Padding for header */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablink {
+    background-color: #555; /* Dark background for tabs */
+    color: #fff; /* Light text color for contrast */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tablink:hover {
+    background-color: #777; /* Darken background on hover */
+}
+
+.tablink.active {
+    background-color: #fff; /* Light background for active tab */
+    color: #333; /* Dark text color for active tab */
+}
+
+.tabcontent {
+    display: none;
+    background-color: #fff; /* White background for content area */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.project {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-content {
+    display: flex;
+    align-items: center; /* Center align thumbnail and project details vertically */
+    margin-bottom: 10px; /* Add margin between project sections */
+}
+
+.thumbnail {
+    width: 150px; /* Fixed width for the thumbnail */
+    height: auto;
+    overflow: hidden; /* Ensure images don't overflow */
+    margin-right: 20px; /* Add spacing between thumbnail and project details */
+}
+
+.thumbnail img {
+    width: 100%; /* Make sure the image fills the container */
+    height: auto;
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.project-details {
+    flex: 1; /* Take remaining space */
+}
+
+.project-details h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.project-details p {
+    margin-bottom: 10px;
+}
+
+.image-gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+
+.scrollable-images {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images stay in a single row */
+}
+
+.scrollable-images img {
+    max-width: 200px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}
